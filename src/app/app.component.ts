@@ -11,15 +11,9 @@ import { map } from 'rxjs';
 
 export class AppComponent {
 
-  isNumberKey(evt:any) {
-    var charCode = (evt.which) ? evt.which : evt.keyCode
-    return !(charCode > 31 && (charCode < 48 || charCode > 57));
-  }
-
   title = 'angularProyecto';
-  dataReady = "";
-
-
+  dataReady = ""
+  
   ContarPalabas(data: String) {
 
     this.dataReady = "";
@@ -59,11 +53,3 @@ export class AppComponent {
 
 
 //scabral@palo-it.com
-
-// echo "# PaloAltoFront" >> README.md
-// git init
-// git add README.md
-// git commit -m "first commit"
-// git branch -M main
-// git remote add origin https://github.com/JuanISC/PaloAltoFront.git
-// git push -u origin maingit
